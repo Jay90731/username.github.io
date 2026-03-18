@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>中華民國資訊學會</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- 在页面加载时初始化 Bootstrap 组件 -->
+<script>
+    // 使用 jQuery（如果您的项目中已经包含了 jQuery）或原生 JavaScript 初始化 Bootstrap 组件
+    $(document).ready(function() {
+        // 初始化下拉菜单
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+     
+
+</head>
+<style>.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* 添加一些上下边距 */
+}
+body {
+            padding-top: 60px; /* 为了让内容不被 header 遮盖，添加相应的上边距 */
+            background-image: url('./assets/img/8889.jpg');
+            /* 替换为您的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* 让背景图固定，不随页面滚动 */
+        }
+</style>
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow" style="position: fixed; top: 0; left: 0; width: 100%;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="login_index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4 fw-bolder">中華民國</span> <span class="text-primary h4 fw-bolder">資訊學會</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                關於學會
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="activity.html">關於學會</a></li>
+                                <li><a class="dropdown-item"  href="activity.html#research_publications">研究及出版品</a></li>
+                                
+                                <!-- 添加更多选项 -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">各校資管系所</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="flower.html">活動花絮</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="call.html">聯絡我們</a>
+                        </li> 
+                         <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">ENGLISH</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="login/login_index.html"><button type="button" ><i class='bx bx-user-circle bx-sm text-primary'></i></button></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+   
+   
+        <style>
+             body {
+            padding-top: 60px; /* 为了让内容不被 header 遮盖，添加相应的上边距 */
+            background-image: url('./assets/img/8889.jpg');
+            /* 替换为您的背景图片路径 */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* 让背景图固定，不随页面滚动 */
+        }
+          
+            .carousel-control-prev,
+            .carousel-control-next {
+                font-size: 0.75rem; /* 调整按钮字体大小 */
+                width: 2rem; /* 调整按钮宽度 */
+                height: 2rem; /* 调整按钮高度 */
+            }
+        
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                width: 1rem; /* 调整按钮图标宽度 */
+                height: 1rem; /* 调整按钮图标高度 */
+            }
+            
+            /* 自定义轮播控制按钮的颜色 */
+            .carousel-control-prev,
+            .carousel-control-next {
+                color: rgb(81, 0, 255); /* 修改按钮颜色 */
+            }
+            
+            /* 自定义轮播控制按钮图标的颜色 */
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: rgb(255, 0, 230); /* 修改图标颜色 */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Start Recent Work -->
+        <section class="py-5 mb-5">
+            <div class="container">
+                <div class="recent-work-header row text-center pb-5">
+                    <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5"><strong>關於學會</strong>
+                    </h2>
+                </div>
+                <div class="row gy-5 g-lg-5 mb-4">
+                    <!-- Start Recent Work -->
+                    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row gy-5 g-lg-5 mb-4">
+                                    <!-- Slide 1 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact1.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>關於學會</strong></h1>
+                                                    <h3></h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 1 -->
+                                    <!-- Slide 2 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact2.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>組織章程</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 2 -->
+                                    <!-- Slide 3 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact3.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>學會組織</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 3 -->
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="row gy-5 g-lg-5 mb-4">
+                                    <!-- Slide 1 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact4.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>理監事</strong></h1>
+                                                    <h3></h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 1 -->
+                                    <!-- Slide 2 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact5.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>申請入會</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 2 -->
+                                    <!-- Slide 3 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact6.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>會議記錄</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 3 -->
+                                </div>
+                            </div>
+                            <!-- Second Carousel Item -->
+                            <div class="carousel-item">
+                                <div class="row gy-5 g-lg-5 mb-4">
+                                    <!-- Slide 4 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact7.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>資料下載</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 4 -->
+                                    <!-- Slide 5 -->
+                                    <!-- End Slide 6 -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev btn-sm" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next btn-sm" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Recent Work -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carousel Example</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .carousel-control-prev,
+            .carousel-control-next {
+                font-size: 0.75rem; /* 调整按钮字体大小 */
+                width: 2rem; /* 调整按钮宽度 */
+                height: 2rem; /* 调整按钮高度 */
+            }
+        
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                width: 1rem; /* 调整按钮图标宽度 */
+                height: 1rem; /* 调整按钮图标高度 */
+            }
+            
+            /* 自定义轮播控制按钮的颜色 */
+            .carousel-control-prev,
+            .carousel-control-next {
+                color: rgb(81, 0, 255); /* 修改按钮颜色 */
+            }
+            
+            /* 自定义轮播控制按钮图标的颜色 */
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                background-color: rgb(191, 0, 255); /* 修改图标颜色 */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Start Recent Work -->
+        <section class="py-5 mb-5">
+            <div class="container">
+                <div class="recent-work-header row text-center pb-5" id="research_publications">
+                    <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5"><strong>研究及出版品</strong>
+                    </h2>
+                </div>
+                <div class="row gy-5 g-lg-5 mb-4">
+                    <!-- Start Recent Work -->
+                    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row gy-5 g-lg-5 mb-4">
+                                    <!-- Slide 1 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="https://3gszolaxfd8v9smfo2neuq.on.drv.tw/JIM20190909/" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>資訊管理學報</strong></h1>
+                                                    <h3></h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 1 -->
+                                    <!-- Slide 2 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact10.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>研討會論文集</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 2 -->
+                                    <!-- Slide 3 -->
+                                    <div class="col-md-4 mb-3">
+                                        <a href="contact11.html" class="recent-work card border-0 shadow-lg overflow-hidden">
+                                            <img class="recent-work-img card-img" src="./assets/img/8500.jpg" alt="Card image">
+                                            <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                                                <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                                                    <h1 class="card-title light-300"><strong>論文查詢</strong></h1>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div><!-- End Slide 3 -->
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev btn-sm" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next btn-sm" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Recent Work -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    
+
+    <!-- Start View Work -->
+   
+
+   
+
+               
+
+
+
+      <!-- Start Footer -->
+      <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">中華資管</span> <span class="text-light h5 semi-bold-600">學會</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Welcome to ROC Department of Information Management Students Association
+                    </p>
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">資訊管理學會</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">[選舉公告]:中華民國資訊管理學會第十八屆...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="activity.html">【會員代表大會公告】中華民國資訊管理學會...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">【理監事選舉公告】社團法人中華民國資訊管...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="a.html">...更多</a>
+                            </li>
+                           
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">學校</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【徵才】國立臺東大學資訊管理學系徵聘專任...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才】國立成功大學工業與資訊管理學系誠...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">【徵聘公告】國立東華大學資訊管理學系徵聘...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">業界</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【論文徵稿】第十一屆服務科學研究論壇暨2...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才公告】衛生福利部食品藥物管理署徵審...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">Drupal跨界整合之社群大會即將開跑</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © FJCU IM 
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" target="_blank"><strong>輔仁大學資管系學會</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
