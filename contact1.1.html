@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>中華民國資訊學會</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- 在页面加载时初始化 Bootstrap 组件 -->
+<script>
+    // 使用 jQuery（如果您的项目中已经包含了 jQuery）或原生 JavaScript 初始化 Bootstrap 组件
+    $(document).ready(function() {
+        // 初始化下拉菜单
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+<style>.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* 添加一些上下边距 */
+}
+</style>
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="login_index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4 fw-bolder">中華民國</span> <span class="text-primary h4 fw-bolder">資訊學會</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2" id="iam">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                關於學會
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="contact1.html">關於學會</a></li>
+                                <li><a class="dropdown-item" href="about.html">研究及出版品</a></li>
+                                
+                                <!-- 添加更多选项 -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">各校資管系所</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">研究及出版品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="flower.html">活動花絮</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="call.html">聯絡我們</a>
+                        </li> 
+                         <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">ENGLISH</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="login/login_index.html"><button type="button" ><i class='bx bx-user-circle bx-sm text-primary'></i></button></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+
+    </body>
+    <style>
+        #side_nav {
+    position: fixed;
+    top: 70px; /* 跟随标题的高度 */
+    left: 0;
+    width: 100px;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.5); /* 设置透明度为 50% 的白色 */
+    padding-top: 20px;
+    border-right: 1px solid white;
+}
+
+/* 样式化导航链接 */
+#side_nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #343a40;
+    background-color: rgba(255, 255, 255, 0); /* 设置透明背景色 */
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时更改导航链接的背景颜色 */
+#side_nav a:hover {
+    background-color: rgba(233, 236, 239, 0.5); /* 设置悬停时的背景色 */
+}
+         
+
+
+        /* CSS 样式直接内嵌到 HTML 中 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* 隐藏表格內容 */
+        .hidden {
+            display: none;
+        }
+
+        /* 將 <p> 元素的文本置中 */
+            p {
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+    <br>
+    
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    
+    <!-- End Banner Hero -->
+
+
+    
+    
+    <div id="side_nav">
+        <a href="contact1.html">關於協會</a>
+        <a href="contact2.html">組織章程</a>
+        <a href="contact3.html">學會組織</a>
+        <a href="contact4.html">理監事</a>
+        <a href="contact5.html">申請入會</a>
+        <a href="contact6.html">會議記錄</a>
+        <a href="contact7.html">資料下載</a>
+        <!-- Add more navigation links as needed -->
+    </div>
+    <br><br><br><br>
+
+    <h1 class="text-center">關於學會</h1>
+    <head>
+    
+       
+            
+      
+         <h2><div class="container">活動</div></h2>
+         <div class="container"><strong>
+             1.國際資訊管理學術研討會 (CSIM ICIM)：
+             已舉辦三十四屆。最近幾年，研討會的投稿論文已成長到400~500篇，錄取率約50~60%，參與盛會的各界人士近800人。
+          <br>   2.資訊管理暨實務研討會 (CSIM IMP)：
+             已舉辦二十八屆。最近幾年，研討會的投稿論文已成長到350~400篇，錄取率約60~70%，參與盛會的各界人士近600人。
+          <br>   3.全國大專院校資訊服務創新競賽暨資訊管理專題競賽：
+             已舉辦二十八屆。於111年，參賽的各校校隊隊數已達250隊。
+           <br>  4.海峽兩岸資訊管理發展與策略學術研討會(每年八月份舉行)
+             已舉辦二十六屆。最近幾年，兩岸三地投稿論文約120~250篇(台灣、大陸、港澳三地，四年為週期輪流主辦，亦即兩年在大陸，一年在台灣，一年在港澳的模式舉行)，大陸地區參與人數約100人致150人，台灣參與人數約50人~150人不等。</strong></div>
+    </head>
+    <body>
+       
+        <br>
+           
+        <p onclick="toggleRow(1)"><strong>[1]國際資訊管理學術研討會暨資管學會年會 （每年的五月份舉行） </strong></p>
+        <div class="container">
+            <table >
+                <thead>
+                    <tr>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th> 
+                    </tr>
+                </thead>
+                <tbody id="row1">
+                    <tr>
+                        <tr>
+                            <td>一</td>
+                            <td>中央大學</td>
+                            <td>83</td>
+                            <td> 二</td>
+                            <td>大葉大學</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td> 三</td>
+                            <td>中正大學</td>
+                           <td>86</td>
+                           
+                            
+                            <td> 四</td>
+                            <td>輔仁大學</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <td> 五</td>
+                            <td>世新大學</td>
+                            <td>88</td>              
+                            <td> 六</td>
+                            <td>交通大學</td>
+                            <td>89</td> 
+                        <tr>
+                            <td> 七</td>
+                            <td>景文技術學院</td>
+                            <td>90</td>
+                            <td> 八</td>
+                            <td>高雄第一科大</td>
+                            <td>91</td>
+                        <tr>
+                            <td>九</td>
+                            <td>大葉大學</td>
+                            <td>92</td>
+                            <td>十</td>
+                            <td>台中技術學院</td>
+                            <td>93</td>
+                        </tr>
+                        <tr>
+                            <td>十一</td>
+                            <td>實踐大學</td>
+                            <td>94</td>
+                            <td>十二</td>
+                            <td>虎尾科技大學</td>
+                            <td>95</td>                               
+                        </tr>
+                        <tr>
+                            <td>十三</td>
+                            <td>樹德科技大學</td>
+                            <td>96</td>
+                            <td>十四</td>
+                            <td>東吳大學</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>十五</td>
+                            <td>高雄應用科技大學</td>
+                            <td>98</td>                   
+                            <td>十六</td>
+                            <td>雲林科技大學</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>十七</td>                           
+                            <td>嘉南藥理科技大學</td>
+                            <td>100</td>
+                            <td>十八</td>
+                            <td>台北科技大學</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>十九</td>
+                            <td>台中科技大學</td>
+                            <td>102</td>
+                            <td>二十</td>
+                            <td>龍華科技大學(預計)</td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>二一</td>
+                            <td>勤益科技大學</td>
+                            <td>104</td>
+                            <td>二二</td>
+                            <td>嘉南藥理大學</td>
+                            <td>105</td>
+                        </tr>
+                        <tr>
+                            <td>二三</td>
+                            <td>聯合大學</td>
+                            <td>106</td>
+                            <td>二四</td>
+                            <td>崑山科技大學</td>
+                            <td>107</td>
+                        </tr>
+                        <tr>
+                            <td>二五</td>
+                            <td>高雄科技大學</td>                     
+                            <td>108</td>
+                            <td>二六</td>                                 
+                            <td>國立雲林科技大學</td>
+                            <td>109</td>
+                        </tr>
+                        <tr>
+                            <td>二七</td>
+                            <td>嘉南藥理大學</td>
+                            <td>111</td>
+                            <td>二八</td>
+                            <td>國立臺北商業大學</td>
+                            <td>112</td>
+                        </tr>
+                    
+                    <!-- 在這裡添加更多行以及其數據 -->
+                </tbody>
+            </table>
+        </div>
+       
+       
+        <br>
+        <p  onclick="toggleRow(2)"><strong>2.國際資訊管理研究暨實務研討會(每年十二月份舉行)</strong></p>
+        
+        <div class="container">
+            <table >
+                <thead>
+                    <tr>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th> 
+                    </tr>
+                </thead>
+                <tbody id="row2">
+                    <tr>
+                        <tr>
+                            <td>一</td>
+                            <td>中央大學</td>
+                            <td>83</td>
+                            <td> 二</td>
+                            <td>大葉大學</td>
+                            <td>84</td>
+                        </tr>
+                        <tr>
+                            <td> 三</td>
+                            <td>中正大學</td>
+                           <td>86</td>
+                           
+                            
+                            <td> 四</td>
+                            <td>輔仁大學</td>
+                            <td>87</td>
+                        </tr>
+                        <tr>
+                            <td> 五</td>
+                            <td>世新大學</td>
+                            <td>88</td>              
+                            <td> 六</td>
+                            <td>交通大學</td>
+                            <td>89</td> 
+                        <tr>
+                            <td> 七</td>
+                            <td>景文技術學院</td>
+                            <td>90</td>
+                            <td> 八</td>
+                            <td>高雄第一科大</td>
+                            <td>91</td>
+                        <tr>
+                            <td>九</td>
+                            <td>大葉大學</td>
+                            <td>92</td>
+                            <td>十</td>
+                            <td>台中技術學院</td>
+                            <td>93</td>
+                        </tr>
+                        <tr>
+                            <td>十一</td>
+                            <td>實踐大學</td>
+                            <td>94</td>
+                            <td>十二</td>
+                            <td>虎尾科技大學</td>
+                            <td>95</td>                               
+                        </tr>
+                        <tr>
+                            <td>十三</td>
+                            <td>樹德科技大學</td>
+                            <td>96</td>
+                            <td>十四</td>
+                            <td>東吳大學</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>十五</td>
+                            <td>高雄應用科技大學</td>
+                            <td>98</td>                   
+                            <td>十六</td>
+                            <td>雲林科技大學</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>十七</td>                           
+                            <td>嘉南藥理科技大學</td>
+                            <td>100</td>
+                            <td>十八</td>
+                            <td>台北科技大學</td>
+                            <td>101</td>
+                        </tr>
+                        <tr>
+                            <td>十九</td>
+                            <td>台中科技大學</td>
+                            <td>102</td>
+                            <td>二十</td>
+                            <td>龍華科技大學(預計)</td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>二一</td>
+                            <td>勤益科技大學</td>
+                            <td>104</td>
+                            <td>二二</td>
+                            <td>嘉南藥理大學</td>
+                            <td>105</td>
+                        </tr>
+                        <tr>
+                            <td>二三</td>
+                            <td>聯合大學</td>
+                            <td>106</td>
+                            <td>二四</td>
+                            <td>崑山科技大學</td>
+                            <td>107</td>
+                        </tr>
+                        <tr>
+                            <td>二五</td>
+                            <td>高雄科技大學</td>                     
+                            <td>108</td>
+                            <td>二六</td>                                 
+                            <td>國立雲林科技大學</td>
+                            <td>109</td>
+                        </tr>
+                        <tr>
+                            <td>二七</td>
+                            <td>嘉南藥理大學</td>
+                            <td>111</td>
+                            <td>二八</td>
+                            <td>國立臺北商業大學</td>
+                            <td>112</td>
+                        </tr>
+                    
+                    <!-- 在這裡添加更多行以及其數據 -->
+                </tbody>
+            </table>
+        </div>
+       
+        <br>
+        <p  onclick="toggleRow(3)"><strong>3.全國大專院校資訊管理專題競賽(每年十二月份舉行)</strong></p>
+        <div class="container">
+            <table >
+                <thead>
+                    <tr>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th> 
+                    </tr>
+                </thead>
+                <tbody id="row3">
+                    <tr>
+                        <td>一</td>
+                        <td>輔仁大學</td>
+                        <td>85</td>
+                        <td> 二</td>
+                        <td>高雄第一科大</td>
+                        <td>86</td>
+                    </tr>
+                    <tr>
+                        <td> 三</td>
+                        <td>長榮大學</td>
+                       <td>87</td>
+                       
+                        
+                        <td> 四</td>
+                        <td>南台科大</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td> 五</td>
+                        <td>雲林科大</td>
+                        <td>89</td>              
+                        <td> 六</td>
+                        <td>萬能技術學院</td>
+                        <td>90</td> 
+                    <tr>
+                        <td> 七</td>
+                        <td>大華技術學院</td>
+                        <td>91</td>
+                        <td> 八</td>
+                        <td>聖約翰技術學院</td>
+                        <td>92</td>
+                    <tr>
+                        <td>九</td>
+                        <td>高苑技術學院</td>
+                        <td>93</td>
+                        <td>十</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>十一</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>95</td>
+                        <td>十二</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>96</td>                               
+                    </tr>
+                    <tr>
+                        <td>十三</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>97</td>
+                        <td>十四</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>98</td>
+                    </tr>
+                    <tr>
+                        <td>十五</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>99</td>                   
+                        <td>十六</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>十七</td>                           
+                        <td>中華民國資訊管理學會</td>
+                        <td>101</td>
+                        <td>十八</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>102</td>
+                    </tr>
+                    <tr>
+                        <td>十九</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>103</td>
+                        <td>二十</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>104</td>
+                    </tr>
+                    <tr>
+                        <td>二一</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>105</td>
+                        <td>二二</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>106</td>
+                    </tr>
+                    <tr>
+                        <td>二三</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>107</td>
+                        <td>二四</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>108</td>
+                    </tr>
+                    <tr>
+                        <td>二五</td>
+                        <td>中華民國資訊管理學會</td>                     
+                        <td>109</td>
+                        <td>二六</td>                                 
+                        <td>中華民國資訊管理學會</td>
+                        <td>110</td>
+                    </tr>
+                    <tr>
+                        <td>二七</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>111</td>
+                        <td>二八</td>
+                        <td>中華民國資訊管理學會</td>
+                        <td>112</td>
+                    </tr>
+                    
+                    <!-- 在這裡添加更多行以及其數據 -->
+                </tbody>
+            </table>
+        </div>
+        
+        <br>
+        <p  onclick="toggleRow(4)"><strong>4.全國資管博士生學術交流研討會 (每年四月份舉行)</strong></p>
+        <div class="container">
+            <table >
+                <thead>
+                    <tr>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th>
+                        <th>屆次</th>
+                        <th>承辦學校</th>
+                        <th>年度</th> 
+                    </tr>
+                </thead>
+                <tbody id="row4">
+                    <tr>
+                        <td>一</td>
+                        <td>中山大學</td>
+                        <td>88</td>
+                        <td> 二</td>
+                        <td>中正大學</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td> 三</td>
+                        <td>中央大學</td>
+                        <td>90</td>
+                        <td> 四</td>
+                        <td>政治大學</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td> 五</td>
+                        <td>台灣大學</td>
+                        <td>92</td>              
+                        <td> 六</td>
+                        <td>台灣科技大學</td>
+                        <td>93</td> 
+                    <tr>
+                        <td> 七</td>
+                        <td>雲林科技大學</td>
+                        <td>94</td>
+                        <td> 八</td>
+                        <td>交通大學、
+                            明新科技大學</td>
+                        <td>95</td>
+                    <tr>
+                        <td>九</td>
+                        <td>高雄第一科技大學</td>
+                        <td>96</td>
+                        <td>十</td>
+                        <td>中山大學</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>十一</td>
+                        <td>中正大學</td>
+                        <td>98</td>
+                        <td>十二</td>
+                        <td>台灣大學</td>
+                        <td>99</td>                               
+                    </tr>
+                    <tr>
+                        <td>十三</td>
+                        <td>台灣大學</td>
+                        <td>100</td>
+                        <td>十四</td>
+                        <td>政治大學</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>十五</td>
+                        <td>大同大學</td>
+                        <td>102</td>                   
+                        <td>十六</td>
+                        <td>國立高雄第一科技大學</td>
+                        <td>103</td>
+                    </tr>
+                    
+                    <!-- 在這裡添加更多行以及其數據 -->
+                </tbody>
+            </table>
+        </div>
+       
+            <br>
+            <p  onclick="toggleRow(5)"><strong>5.海峽兩岸資訊管理發展與策略學術研討會(每年八月份舉行)</strong></p>
+            <div class="container">
+                <table >
+                    <thead>
+                        <tr>
+                            <th>屆次</th>
+                            <th>年度</th>
+                            <th>地點</th>
+                            <th>承辦學校</th>
+                            <th>主辦主席</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody id="row5">
+                        <tr>
+                            <td>一</td>
+                            <td>1994</td>
+                            <td>上海</td>
+                            <td> 復旦大學</td>
+                            <td>鄭紹濂、薛華成教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二</td>
+                            <td>1996</td>
+                           <td>臺灣中壢市</td>
+                           
+                            
+                            <td> 中央大學</td>
+                            <td>宋鎧教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td> 三</td>
+                            <td>1997</td>
+                            <td>黑龍江哈爾濱</td>              
+                            <td>哈爾濱工業大學</td>
+                            <td>黃梯雲、李一軍教授</td>
+                        </tr>
+                           
+                        <tr>
+                            <td> 四</td>
+                            <td>1998</td>
+                            <td>香港</td>
+                            <td> 香港嶺南大學</td>
+                            <td>盧明德教授</td>
+                        </tr>   
+                        <tr>
+                            <td>五</td>
+                            <td>1999</td>
+                            <td>湖南長沙</td>
+                            <td>中南大學</td>
+                            <td>陳曉紅教授</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>六</td>
+                            <td>2000</td>
+                            <td>臺灣台北市</td>
+                            <td>政治大學</td>
+                            <td>周宣光教授</td>
+                                                          
+                        </tr>
+                        <tr>
+                            <td>七</td>
+                            <td>2001</td>
+                            <td>新疆烏魯木齊</td>
+                            <td>中南大學</td>
+                            <td>陳曉紅教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>八</td>
+                            <td>2002</td>
+                            <td>澳門</td>                   
+                            <td>澳門科技大學</td>
+                            <td>周禮杲、薛華成教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>九</td>                           
+                            <td>2003</td>
+                            <td>安徽合肥</td>
+                            <td>合肥工業大學</td>
+                            <td>楊善林教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十</td>
+                            <td>2004</td>
+                            <td>臺灣高雄市</td>
+                            <td>中山大學</td>
+                            <td>侯君溥、賴香菊教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十一</td>
+                            <td>2005</td>
+                            <td>湖北武漢</td>
+                            <td>華中科技大學</td>
+                            <td>張金隆教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十二</td>
+                            <td>2006</td>
+                            <td>香港</td>
+                            <td>香港中文大學</td>
+                            <td>張惠民教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十三</td>
+                            <td>2007</td>                     
+                            <td>北京</td>
+                            <td>北京交通大學</td>                                 
+                            <td>劉延平、張真繼教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十四</td>
+                            <td>2008</td>
+                            <td>臺灣中壢市</td>
+                            <td>中央大學</td>
+                            <td>周惠文 教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十五</td>
+                            <td>2009</td>
+                            <td>上海</td>
+                            <td>同濟大學</td>
+                            <td>霍佳震 教授兼院長</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十六</td>
+                            <td>2010</td>
+                            <td>香港</td>
+                            <td>香港城市大學</td>
+                            <td>Benjamin Yen</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十七</td>
+                            <td>2011</td>
+                            <td>南京</td>
+                            <td>南京大學</td>
+                            <td>朱慶華 教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十八</td>
+                            <td>2012</td>
+                            <td>臺灣台北市</td>
+                            <td>實踐大學</td>
+                            <td>李瑞元教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>十九</td>
+                            <td>2013</td>
+                            <td>四川成都</td>
+                            <td>成都電子科技大學</td>
+                            <td>紹培基教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二十</td>
+                            <td>2014</td>
+                            <td>湖北武漢</td>
+                            <td>武漢大學</td>
+                            <td>陸偉教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二一</td>
+                            <td>2015</td>
+                            <td>澳門</td>
+                            <td>澳門科技大學</td>
+                            <td>龐川教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二二</td>
+                            <td>2016</td>
+                            <td>臺灣台北市</td>
+                            <td>臺北科技大學</td>
+                            <td>翁頌舜 教授兼院長</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二三</td>
+                            <td>2017</td>
+                            <td>陝西西安</td>
+                            <td>西安思源學院</td>
+                            <td>段興民 教授兼院長</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二四</td>
+                            <td>2018</td>
+                            <td>香港</td>
+                            <td>香港大學</td>
+                            <td>Benjamin Yen</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二五</td>
+                            <td>2019</td>
+                            <td>哈爾濱</td>
+                            <td>中國哈爾濱工業大學</td>
+                            <td>李一軍、葉強教授</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>二六</td>
+                            <td>2021</td>
+                            <td>遠距</td>
+                            <td>河海大學</td>
+                            <td></td>
+                            
+                        </tr>
+                        
+                        <!-- 在這裡添加更多行以及其數據 -->
+                    </tbody>
+                </table>
+            </div>
+            <script>
+                function toggleRow(rowNumber) {
+                    var row = document.getElementById("row" + rowNumber);
+                    if (row.classList.contains("hidden")) {
+                        row.classList.remove("hidden"); // 如果行被隱藏，則顯示行
+                    } else {
+                        row.classList.add("hidden"); // 如果行被顯示，則隱藏行
+                    }
+                }
+            </script>
+      
+
+    <br>
+    <div class="row">
+        <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+            
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="contact1.html">   <button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">1</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+               <button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">2</button></a>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="contact1.1.html#iam">   <button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">頂端</button>
+            </div>
+           
+        </div>
+    </div>
+
+
+ 
+    
+    </body>
+    </html>
+    
+       
+
+    <!-- End Contact -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">中華資管</span> <span class="text-light h5 semi-bold-600">學會</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Welcome to ROC Department of Information Management Students Association
+                    </p>
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">資訊管理學會</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">[選舉公告]:中華民國資訊管理學會第十八屆...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="activity.html">【會員代表大會公告】中華民國資訊管理學會...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">【理監事選舉公告】社團法人中華民國資訊管...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="a.html">...更多</a>
+                            </li>
+                           
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">學校</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【徵才】國立臺東大學資訊管理學系徵聘專任...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才】國立成功大學工業與資訊管理學系誠...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">【徵聘公告】國立東華大學資訊管理學系徵聘...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">業界</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【論文徵稿】第十一屆服務科學研究論壇暨2...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才公告】衛生福利部食品藥物管理署徵審...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">Drupal跨界整合之社群大會即將開跑</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © FJCU IM 
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" target="_blank"><strong>輔仁大學資管系學會</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

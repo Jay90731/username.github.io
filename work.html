@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>中華民國資訊學會</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- 在页面加载时初始化 Bootstrap 组件 -->
+<script>
+    // 使用 jQuery（如果您的项目中已经包含了 jQuery）或原生 JavaScript 初始化 Bootstrap 组件
+    $(document).ready(function() {
+        // 初始化下拉菜单
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+<style>.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* 添加一些上下边距 */
+}
+</style>
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="login_index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4 fw-bolder">中華民國</span> <span class="text-primary h4 fw-bolder">資訊學會</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                關於學會
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="activity.html">關於學會</a></li>
+                                <li><a class="dropdown-item" href="activity.html">研究及出版品</a></li>
+                                
+                                <!-- 添加更多选项 -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">各校資管系所</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="flower.html">活動花絮</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="call.html">聯絡我們</a>
+                        </li> 
+                         <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">ENGLISH</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="login/login_index.html"><button type="button" ><i class='bx bx-user-circle bx-sm text-primary'></i></button></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   
+    <style>
+        
+        #side_nav {
+    position: fixed;
+    top: 60px; /* 跟随标题的高度 */
+    left: 0;
+    width: 80px;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.5); /* 设置透明度为 50% 的白色 */
+    padding-top: 20px;
+    border-right: 1px solid white;
+    }
+    
+
+
+/* 样式化导航链接 */
+#side_nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #343a40;
+    background-color: rgba(255, 255, 255, 0); /* 设置透明背景色 */
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时更改导航链接的背景颜色 */
+#side_nav a:hover {
+    background-color: rgba(233, 236, 239, 0.5); /* 设置悬停时的背景色 */
+}
+         
+
+
+        /* CSS 样式直接内嵌到 HTML 中 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        
+        table {
+            margin-left: 8%;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* 隐藏表格內容 */
+        .hidden {
+            display: none;
+        }
+
+        /* 將 <p> 元素的文本置中 */
+            p {
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+    <br>
+    
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    
+    <!-- End Banner Hero -->
+
+
+    
+    
+   
+</head>
+<body>
+<br><br><br><br><br><br>
+<p onclick="toggleRow(1)"><strong>中華民國資管學會 </strong></p>
+<table >
+ <thead>
+   <tr>
+       <th>學校名稱</th>
+       <th>系主任</th>
+       <th>系所名稱</th>
+       <th>系所網址</th>
+       <th>電話</th>
+       <th>簡介</th>       
+       
+   </tr>
+ </thead>
+ <tbody >
+   <tr >
+       <td>樹人醫護管理專校</td>
+       <td>楊媚靜</td>
+       <td>資訊管理系</td>
+       <td><a href="https://im.ctu.edu.tw/">https://im.ctu.edu.tw/</a></td>
+       <td>(07)6979392</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td> 康寧大學(健康數位科技學系)</td>
+       <td>陳國偉</td>
+       <td>資訊管理系</td>
+       <td><a href="http://da.ukn.edu.tw/bin/home">http://da.ukn.edu.tw/bin/home....</a> </td>
+       <td>(06)2552500#33300</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>環球科技大學(資訊與電子商務管理系)</td>
+       <td>盧盈光</td>
+       <td>資訊管理系</td>              
+       <td><a href="http://www.iecm.twu.edu..."> http://www.iecm.twu.edu...</td></a>
+       <td>	(05)5370988#4351</td>
+       <td>檢視</td> 
+   <tr>
+       <td> 樹德科技大學</td>
+       <td>蔡旭昇</td>
+       <td>資訊管理系</td>
+       <td><a href="	http://www.mis.stu.edu.tw/"> 	http://www.mis.stu.edu.tw/</td></a>
+       <td>(07)6158000#3002</td>
+       <td>檢視</td>
+   <tr>
+       <td>遠東科技大學</td>
+       <td>何瑞峰</td>
+       <td>資訊管理系</td>
+       <td><a href="	http://www.feu...."> 	http://www.feu....</td></a>
+       <td>(06)5979566</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>輔英科技大學</td>
+       <td>葉富豪</td>
+       <td>資訊科技與管理學系</td>
+       <td><a href="http://eitm.fy.edu.tw/?Lang=zh..."> 	http://eitm.fy.edu.tw/?Lang=zh...</td></a>
+       <td>(07)7811151#6480</td>
+       <td>檢視</td>                               
+   </tr>
+   <tr>
+       <td>嘉南藥理科技大學</td>
+       <td>陳瑞甫</td>
+       <td>資訊管理系</td>
+       <td><a href="https://mis.cnu.edu.tw/"> 	https://mis.cnu.edu.tw/</td></a>
+       <td>(06)2664911#5300</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>崑山科技大學</td>
+       <td>	曾生元</td>
+       <td>資訊管理系</td>                   
+       <td><a href="	http://www.mis.stu.edu.tw/"> 	http://www.mis.stu.edu.tw/</td></a>
+       <td>(06)2664911#5300</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>高苑科技大學</td>
+       <td>	史浩文</td>
+       <td>資訊管理系</td>
+       <td><a href="https://web.ksu.edu.tw/...">https://web.ksu.edu.tw/...</td></a>
+       <td>(07)6077090</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>美和科技大學</td>
+       <td>苑梅俊</td>
+       <td>資訊管理系</td>
+       <td><a href="http://www.mis.kyu.edu.tw">http://www.mis.kyu.edu.tw</td></a>
+       <td>(08)7799821#8661</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>南台科技大學</td>
+       <td>汪美香</td>
+       <td>資訊管理系</td>
+       <td><a href="http://dim.meiho.edu.tw/"> http://dim.meiho.edu.tw/</td></a>
+       <td>(06)2533131#4301</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>國立澎湖科技大學</td>
+       <td>林永清</td>
+       <td>	資訊管理系</td>
+       <td><a href="http://www.mis.npu.edu.tw/"> http://www.mis.npu.edu.tw//</td></a>
+       <td>(06)9264115#3402</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>國立高雄科技大學</td>
+       <td>	蘇國瑋</td>                     
+       <td>資訊管理系</td>
+       <td><a href="	https://mis.nkust.edu.tw/...">	https://mis.nkust.edu.tw/...</td></a>
+       <td>(07)6011000#34102</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>國立屏東大學</td>
+       <td>戴逸民</td>
+       <td>資訊管理系</td>
+       <td><a href="http://www....">http://www....</td></a>
+       <td>	(08)7663800</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>國立虎尾科技大學</td>
+       <td>	吳純慧</td>
+       <td>資訊管理系</td>
+       <td><a href="http://nfuim.nfu.edu.tw/zh/">http://nfuim.nfu.edu.tw/zh/</td></a>
+       <td>(05)6315000</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>國立雲林科技大學</td>
+       <td>嘉義大學</td>
+       <td>資訊管理系</td>
+       <td><a href="https://www.mis.yuntech.edu.tw.../"> https://www.mis.yuntech.edu.tw...</td></a>
+       <td>(05)5342601#5302~5304</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+       <td>嶺東科技大學</td>
+       <td>黃國華</td>
+       <td>資訊管理系</td>
+       <td><a href="http://www.teach....">http://www.teach....</td></a>
+       <td>(04)23892088#3732</td>
+       <td>檢視</td>
+   </tr>
+   <tr>
+    <td>僑光科技大學</td>
+    <td>程榮祥</td>
+    <td>資訊管理系</td>
+    <td><a href="https://imtech.ocu.edu.tw/">https://imtech.ocu.edu.tw/</td></a>
+    <td>(04)23892088#3732</td>
+    <td>檢視</td>
+    </tr>
+    <tr>
+        <td>朝陽科技大學</td>
+        <td>	呂慈純</td>
+        <td>資訊管理系</td>
+        <td><a href="	https://webim.cyut.edu.tw/"> 	https://webim.cyut.edu.tw/</td></a>
+        <td>(04)23892088#3732</td>
+        <td>檢視</td>
+    </tr>
+    <tr>
+        <td>修平科技大學</td>
+        <td>王仁澤</td>
+        <td>資訊管理系</td>
+        <td><a href="https://im.hust.edu.tw/"> 	https://im.hust.edu.tw/</td></a>
+        <td>(04)23892088#3732</td>
+        <td>檢視</td>
+    </tr>
+  </tbody>
+   
+</table>
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    
+            <!-- End slider -->
+
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+    <!-- End Banner Hero -->
+
+    <!-- Start Our Work -->
+   
+    <br>    
+    <div class="row">
+            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+                
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">1</button>
+                </div>
+                <div class="btn-group me-2" role="group" aria-label="Second group">
+                    <a href="work2.html"><button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">2</button></a>
+            
+                </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+             <a href="index.html"></a>   <button type="button" class="btn btn-secondary text-white">首頁</button></a> 
+            </div>
+    </div>
+    </section>
+    <!-- End Our Work -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">中華資管</span> <span class="text-light h5 semi-bold-600">學會</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Welcome to ROC Department of Information Management Students Association
+                    </p>
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">資訊管理學會</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">[選舉公告]:中華民國資訊管理學會第十八屆...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="activity.html">【會員代表大會公告】中華民國資訊管理學會...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">【理監事選舉公告】社團法人中華民國資訊管...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="a.html">...更多</a>
+                            </li>
+                           
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">學校</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【徵才】國立臺東大學資訊管理學系徵聘專任...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才】國立成功大學工業與資訊管理學系誠...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">【徵聘公告】國立東華大學資訊管理學系徵聘...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">業界</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【論文徵稿】第十一屆服務科學研究論壇暨2...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才公告】衛生福利部食品藥物管理署徵審...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">Drupal跨界整合之社群大會即將開跑</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © FJCU IM 
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" target="_blank"><strong>輔仁大學資管系學會</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
+
+              

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>中華民國資訊學會</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- 在页面加载时初始化 Bootstrap 组件 -->
+<script>
+    // 使用 jQuery（如果您的项目中已经包含了 jQuery）或原生 JavaScript 初始化 Bootstrap 组件
+    $(document).ready(function() {
+        // 初始化下拉菜单
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+<style>.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* 添加一些上下边距 */
+}
+</style>
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="login_index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4 fw-bolder">中華民國</span> <span class="text-primary h4 fw-bolder">資訊學會</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                關於學會
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="activity.html">關於學會</a></li>
+                                <li><a class="dropdown-item" href="activity.html#research_publications">研究及出版品</a></li>
+                                
+                                <!-- 添加更多选项 -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">各校資管系所</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="flower.html">活動花絮</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="call.html">聯絡我們</a>
+                        </li> 
+                         <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">ENGLISH</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="login/login_index.html"><button type="button" ><i class='bx bx-user-circle bx-sm text-primary'></i></button></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<style>
+    body {
+ /* 背景圖片的URL */
+background-size: cover; /* 調整背景圖片大小以填充整個頁面 */
+background-position: center; /* 將背景圖片置中 */
+background-repeat: no-repeat; /* 防止背景圖片重複 */
+}
+  
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* 隐藏表格內容 */
+        .hidden {
+            display: none;
+        }
+
+        /* 將 <p> 元素的文本置中 */
+            p {
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<br><br><br><br>
+<h2 class="container" id="asap">ENGLISH</h2>
+<div class="container"><strong>
+ History of Activities</strong></div>
+<br><div class="container">
+    <p onclick="toggleRow(1)"><strong>[1]International Conference on Information Management  </strong></p>
+    <div class="container">
+     
+        <table>
+         <thead>
+          <tr>
+           <th>Period	</th>
+           <th>Hold University</th>
+           <th>Year</th>
+           <th>Period	</th>
+           <th>Hold University</th>
+           <th>Year</th>       
+           
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <td>1.</td>
+           <td>National Sun Yat-Sen University</td>
+           <td>1990</td>
+           <td> 2.</td>
+           <td>Fu Jen Catholic University</td>
+           <td>1991</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>National Chiao Tung University</td>
+            <td>1992</td>
+            <td> 4.</td>
+            <td>Ming Chuan University</td>
+            <td>1993</td>
+         </tr>
+         <tr>
+            <td>5.</td>
+            <td>Tamkang University</td>
+            <td>1994</td>
+            <td> 6.</td>
+            <td>National Central University</td>
+            <td>1995</td>
+         </tr>
+         <tr>
+            <td>7.</td>
+            <td>Chung Yuan Christian University</td>
+            <td>1996</td>
+            <td> 8.</td>
+            <td>National Chengchi University</td>
+            <td>1997</td>
+         </tr>
+         <tr>
+            <td>9.</td>
+            <td>Yuan Ze University</td>
+            <td>1998</td>
+            <td> 10.</td>
+            <td>Central Police University</td>
+            <td>1999</td>
+         </tr>
+         <tr>
+            <td>11.</td>
+            <td>National Sun Yat-Sen University</td>
+            <td>2000</td>
+            <td> 12.</td>
+            <td>National Taiwan University</td>
+            <td>2001</td>
+         </tr>
+         <tr>
+            <td>13.</td>
+            <td>Tamkang University</td>
+            <td>2002</td>
+            <td> 14.</td>
+            <td>National Chung Cheng University</td>
+            <td>2003</td>
+         </tr>
+         <tr>
+            <td>15.</td>
+            <td>Chung Yuan Christian University</td>
+            <td>2004</td>
+            <td> 16.</td>
+            <td>Fu Jen Catholic University</td>
+            <td>2005</td>
+         </tr>
+         <tr>
+            <td>17.</td>
+            <td>I-Shou University</td>
+            <td>2006</td>
+            <td> 18.</td>
+            <td>Ming Chuan University</td>
+            <td>2007</td>
+         </tr>
+         <tr>
+            <td>19.</td>
+            <td>National Chi Nan University</td>
+            <td>2008</td>
+            <td> 20.</td>
+            <td>Shih Hsin University</td>
+            <td>2009</td>
+         </tr>
+         <tr>
+            <td>21.</td>
+            <td>National Chen Kung University</td>
+            <td>2010</td>
+            <td> 22.</td>
+            <td>Chaoyang University of Technology</td>
+            <td>2011</td>
+        </tr>
+        <tr>
+            <td>23.</td>
+            <td>Nationa Ksohsiung University</td>
+            <td>2012</td>
+            <td> 24.</td>
+            <td>Aletheia University</td>
+            <td>2013</td>
+        </tr>
+        <tr>
+            <td>25.</td>
+            <td>National Chung Hsing University</td>
+            <td>2014</td>
+            <td> 26.</td>
+            <td>Tatung University</td>
+            <td>2015</td>
+        </tr>
+        <tr>
+            <td>27.</td>
+            <td>Providence University</td>
+            <td>2016</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+   
+   
+    <br>
+    <p  onclick="toggleRow(2)"><strong>[2]International Conference on Information Management and Practical Application</strong></p>
+    
+    <div class="container">
+        <table>
+            <tr>
+                <th>Period	</th>
+                <th>Hold University</th>
+                <th>Year</th>
+                <th>Period	</th>
+                <th>Hold University</th>
+                <th>Year</th>       
+                
+             </tr>
+             <tr>
+                <td>1.</td>
+                <td>National Sun Yat-Sen University</td>
+                <td>1990</td>
+                <td> 2.</td>
+                <td>Fu Jen Catholic University</td>
+                <td>1991</td>
+             </tr>
+             <tr>
+                 <td>3.</td>
+                 <td>National Chiao Tung University</td>
+                 <td>1992</td>
+                 <td> 4.</td>
+                 <td>Ming Chuan University</td>
+                 <td>1993</td>
+              </tr>
+              <tr>
+                 <td>5.</td>
+                 <td>Tamkang University</td>
+                 <td>1994</td>
+                 <td> 6.</td>
+                 <td>National Central University</td>
+                 <td>1995</td>
+              </tr>
+              <tr>
+                 <td>7.</td>
+                 <td>Chung Yuan Christian University</td>
+                 <td>1996</td>
+                 <td> 8.</td>
+                 <td>National Chengchi University</td>
+                 <td>1997</td>
+              </tr>
+              <tr>
+                 <td>9.</td>
+                 <td>Yuan Ze University</td>
+                 <td>1998</td>
+                 <td> 10.</td>
+                 <td>Central Police University</td>
+                 <td>1999</td>
+              </tr>
+              <tr>
+                 <td>11.</td>
+                 <td>National Sun Yat-Sen University</td>
+                 <td>2000</td>
+                 <td> 12.</td>
+                 <td>National Taiwan University</td>
+                 <td>2001</td>
+              </tr>
+              <tr>
+                 <td>13.</td>
+                 <td>Tamkang University</td>
+                 <td>2002</td>
+                 <td> 14.</td>
+                 <td>National Chung Cheng University</td>
+                 <td>2003</td>
+              </tr>
+              <tr>
+                 <td>15.</td>
+                 <td>Chung Yuan Christian University</td>
+                 <td>2004</td>
+                 <td> 16.</td>
+                 <td>Fu Jen Catholic University</td>
+                 <td>2005</td>
+              </tr>
+              <tr>
+                 <td>17.</td>
+                 <td>I-Shou University</td>
+                 <td>2006</td>
+                 <td> 18.</td>
+                 <td>Ming Chuan University</td>
+                 <td>2007</td>
+              </tr>
+              <tr>
+                 <td>19.</td>
+                 <td>National Chi Nan University</td>
+                 <td>2008</td>
+                 <td> 20.</td>
+                 <td>Shih Hsin University</td>
+                 <td>2009</td>
+              </tr>
+              <tr>
+                 <td>21.</td>
+                 <td>National Chen Kung University</td>
+                 <td>2010</td>
+              </tr>
+        </table>
+    </div>
+   
+    <br>
+    <p  onclick="toggleRow(3)"><strong>[3]National College Contest of Information Management Project Design and IT Services Innovationv</strong></p>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Period	</th>
+                <th>Hold University</th>
+                <th>Year</th>
+                <th>Period	</th>
+                <th>Hold University</th>
+                <th>Year</th>       
+                
+             </tr>
+             <tr>
+                <td>1.</td>
+                <td>National Sun Yat-Sen University</td>
+                <td>1990</td>
+                <td> 2.</td>
+                <td>Fu Jen Catholic University</td>
+                <td>1991</td>
+             </tr>
+             <tr>
+                 <td>3.</td>
+                 <td>National Chiao Tung University</td>
+                 <td>1992</td>
+                 <td> 4.</td>
+                 <td>Ming Chuan University</td>
+                 <td>1993</td>
+              </tr>
+              <tr>
+                 <td>5.</td>
+                 <td>Tamkang University</td>
+                 <td>1994</td>
+                 <td> 6.</td>
+                 <td>National Central University</td>
+                 <td>1995</td>
+              </tr>
+              <tr>
+                 <td>7.</td>
+                 <td>Chung Yuan Christian University</td>
+                 <td>1996</td>
+                 <td> 8.</td>
+                 <td>National Chengchi University</td>
+                 <td>1997</td>
+              </tr>
+              <tr>
+                 <td>9.</td>
+                 <td>Yuan Ze University</td>
+                 <td>1998</td>
+                 <td> 10.</td>
+                 <td>Central Police University</td>
+                 <td>1999</td>
+              </tr>
+              <tr>
+                 <td>11.</td>
+                 <td>National Sun Yat-Sen University</td>
+                 <td>2000</td>
+                 
+              </tr>
+              
+        </table>
+    
+    </div>
+    <script>
+        function toggleRow(rowNumber) {
+            var row = document.getElementById("row" + rowNumber);
+            if (row.classList.contains("hidden")) {
+                row.classList.remove("hidden"); // 如果行被隱藏，則顯示行
+            } else {
+                row.classList.add("hidden"); // 如果行被顯示，則隱藏行
+            }
+        }
+    </script>
+
+
+  
+
+<br>
+    <div class="row">
+        <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
+            
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="english.html">   <button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">1</button>
+            </div>
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="english2.html"><button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">2</button></a>
+        
+            </div>  
+            <div class="btn-group me-2" role="group" aria-label="Second group">
+                <a href="english3.html#asap"><button type="button" class="btn btn-secondary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">頂端
+                </button></a>
+        
+            </div>     
+        </div>
+    </div>
+
+
+
+ 
+    
+    </body>
+    </html>
+    
+       
+
+    <!-- End Contact -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">中華資管</span> <span class="text-light h5 semi-bold-600">學會</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Welcome to ROC Department of Information Management Students Association
+                    </p>
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">資訊管理學會</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">[選舉公告]:中華民國資訊管理學會第十八屆...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="activity.html">【會員代表大會公告】中華民國資訊管理學會...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">【理監事選舉公告】社團法人中華民國資訊管...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="a.html">...更多</a>
+                            </li>
+                           
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">學校</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【徵才】國立臺東大學資訊管理學系徵聘專任...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才】國立成功大學工業與資訊管理學系誠...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">【徵聘公告】國立東華大學資訊管理學系徵聘...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">業界</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【論文徵稿】第十一屆服務科學研究論壇暨2...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才公告】衛生福利部食品藥物管理署徵審...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">Drupal跨界整合之社群大會即將開跑</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © FJCU IM 
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" target="_blank"><strong>輔仁大學資管系學會</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>中華民國資訊學會</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font CSS -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Load Tempalte CSS -->
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- 在页面加载时初始化 Bootstrap 组件 -->
+<script>
+    // 使用 jQuery（如果您的项目中已经包含了 jQuery）或原生 JavaScript 初始化 Bootstrap 组件
+    $(document).ready(function() {
+        // 初始化下拉菜单
+        $('.dropdown-toggle').dropdown();
+    });
+</script>
+<!--
+    
+TemplateMo 561 Purple Buzz
+
+https://templatemo.com/tm-561-purple-buzz
+
+-->
+</head>
+<style>
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0; /* 添加一些上下边距 */
+}
+</style>
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand h1" href="login_index.html">
+                <i class='bx bx-buildings bx-sm text-dark'></i>
+                <span class="text-dark h4 fw-bolder">中華民國</span> <span class="text-primary h4 fw-bolder">資訊學會</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success">
+                <div class="flex-fill mx-xl-5 mb-2">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                關於學會
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="activity.html">關於學會</a></li>
+                                <li><a class="dropdown-item" href="activity.html#research_publications">研究及出版品</a></li>
+                                
+                                <!-- 添加更多选项 -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">各校資管系所</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="flower.html">活動花絮</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="call.html">聯絡我們</a>
+                        </li> 
+                         <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">ENGLISH</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
+                    <a class="nav-link" href="login/login_index.html"><button type="button" ><i class='bx bx-user-circle bx-sm text-primary'></i></button></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   
+    
+     
+    <!-- Close Header -->
+
+
+    <!-- Start Banner Hero -->
+    <style>
+        #side_nav {
+    position: fixed;
+    top: 60px; /* 跟随标题的高度 */
+    left: 0;
+    width: 100px;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.5); /* 设置透明度为 50% 的白色 */
+    padding-top: 20px;
+    border-right: 1px solid white;
+}
+
+/* 样式化导航链接 */
+#side_nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #343a40;
+    background-color: rgba(255, 255, 255, 0); /* 设置透明背景色 */
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时更改导航链接的背景颜色 */
+#side_nav a:hover {
+    background-color: rgba(233, 236, 239, 0.5); /* 设置悬停时的背景色 */
+}
+         
+        .collapsible {
+        background-color: #beb9b67c;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+        body {
+          /* 背景圖片的URL */
+          background-size: cover; /* 調整背景圖片大小以填充整個頁面 */
+          background-position: center; /* 將背景圖片置中 */
+          background-repeat: no-repeat; /* 防止背景圖片重複 */
+      }
+      body {
+          text-align: center; /* 將所有內容置中 */
+      }
+
+      .content {
+          display: inline-block; /* 讓內容置中 */
+          text-align: left; /* 讓內容向左對齊 */
+          margin: 0 auto; /* 讓內容置中 */
+      }
+  </style>
+   <div id="side_nav">
+    <a href="contact1.html">關於協會</a>
+    <a href="contact2.html">組織章程</a>
+    <a href="contact3.html">學會組織</a>
+    <a href="contact4.html">理監事</a>
+    <a href="contact5.html">申請入會</a>
+    <a href="contact6.html">會議記錄</a>
+    <a href="contact7.html">資料下載</a>
+    <!-- Add more navigation links as needed -->
+</div>
+  <br><br><br><br>
+  <div class="content" >
+    <h1>組織章程</h1>
+    <p><span style="font-size:16px;"><strong>中華民國資訊管理學會章程</strong></span></p>
+  <p><span style="font-size:16px;"><strong>八十四年度會員大會修訂</strong></span></p>
+  <p><span style="font-size:16px;"><strong>99.5.22第十一屆第二次會員大會修訂通過</strong></span></p>
+  <p><span style="font-size:16px;"><strong>102.5.25第十二屆第二次會員代表大會新訂通過</strong></span></p>
+
+  <br>
+  <button class="collapsible" style="color:rgb(255, 0, 195);"><strong> 第一章 總則</strong></button>
+  
+<div class="content">
+ <br>
+ <p><span style="font-size:16px;"><strong>第一條、本會訂名為「中華民國資訊管理學會」(以下簡稱本會)。</strong></span></p>
+<p> </p>
+<p ><span style="font-size:16px;"><strong>第二條、本會為依據人民團體法設立之社會團體非以營利為目的。本會之宗旨為促進資訊管理學術之研究發展，推廣資訊管理學術之實務應用，整合</strong></span></p>
+<p><span style="font-size:16px;"><strong>資訊管理學術之理論與實務，與提昇資訊管理學術之教育水準。</strong></span></p>
+<p><span style="font-size:16px;"><strong>第三條、本會以全國行政區域為組織區域。</strong></span></p>
+<p><span style="font-size:16px;"><strong>第四條、本會之會址設於主管機關所在地區並得報經主管機關核准設辦事處。</strong></span></p>
+<p><span style="font-size:16px;"><strong>第五條、本會之任務如下</strong></span></p>
+<p><span style="font-size:16px;"><strong>一、從事資訊管理學術及實務之整合研究;</strong></span></p>
+<p><span style="font-size:16px;"><strong>二、舉辦及參加國內外資訊管理之相關學術會議及活動;</span></p>
+    <p><span style="font-size:16px;"><strong>三、建議資訊管理之課程架構;</strong></span></p>
+    <p><span style="font-size:16px;"><strong>四、辦理資訊管理進修教育;</strong></span></p>
+    <p><span style="font-size:16px;"><strong>五、發行期刊及著譯叢書;</strong></span></p>
+    <p><span style="font-size:16px;"><strong>六、接受政府及民間之委託辦理與資訊管理之相關研究諮詢與服務;</strong></span></p>
+    <p><span style="font-size:16px;"><strong>七、符合本會宗旨之其他事項。</strong></span></p>
+
+<p> </p>
+
+</div>
+<br>
+<button class="collapsible" style="color:rgb(255, 0, 195);"><strong>第二章 會員</strong></button>
+<div class="content">
+    <p><span style="font-size:16px;"><strong>第七條、本會會員如下</strong></span></p>
+    <p><span style="font-size:16px;"><strong>一、個人會員</strong></span></p>
+    <p><span style="font-size:16px;"><strong>1、一般會員，凡年滿二十歲認同本會宗旨者均可申請入會，經理事會審查通過者得為一般會員。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>２、正會員，凡合乎下列條件之一經正會員一人之推薦，並經審查合格由本會理事會通過後得為本會正會員。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>(1)國內各大專院校講師(含以上或在研究發展機構任相當職務者) 。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>(2)國內外資訊管理或相關研究所畢業或研究所修  *年以上並有論文公開發表者。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>(3)政府或公民營企業擔任資訊管理或其他主管職務  *年以上者</strong></span></p>
+    <p><span style="font-size:16px;"><strong>(4)為本會一般會員三年以上並有傑出表現者。</span></p>
+    <p><span style="font-size:16px;"><strong>二、學生會員：各大專院校在校學生，經理事會審查通過得加入本會為學生會員。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>三、團體會員：凡國內外工商企業或學術機構，經正會員一人以上之推薦並經本會理事會通過後得為團體會員，並得推派代表一人享有正會員權利。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>四、贊助會員：捐助本會之個人或團體，並經本會理事會通過後得為本會贊助會員。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>五、榮譽會員：由理事會推薦頒贈。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第八條、會員有遵守本會章程決議及繳納會費之義務。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第九條、會員有違反法令章程、連續兩年未繳會費、或不遵守會員(會員代表)大會決議者，得經理事會決議予以警告或停權處分。其危害團體情節重</strong></span></p>
+    <p><span style="font-size:16px;"><strong>大者，得經會員大會決議予以除名。會員有下列情事之一者為出會：</strong></span></p>
+    <p><span style="font-size:16px;"><strong>1.死亡。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>2.喪失會員資格。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>3.經會員大會決議除名者。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十條、會員得以書面並敘明理由向本會聲明退會。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十一條、會員經除名或退會以繳納之各項費用不予退還。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十二條、正會員及團體會員所派代表，有表決權、選舉權、被選舉權與罷免權。其他會員僅有列席會員(會員代表)大會之權利，每一正會員為一</span></p>
+    <p><span style="font-size:16px;"><strong>權。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十三條、會員之入會程序及會籍變更相關辦法另訂之。</strong></span></p>
+    
+</div>
+<br>
+<button class="collapsible" style="color:rgb(255, 0, 195);"><strong>第三章 組織及職權</strong></button>
+<div class="content">
+    <p><span style="font-size:16px;"><strong>第十四條、本會以會員(會員代表)大會為最高權力機構，會員(會員代表)大會閉會期間，由理事會代行職權。監事會為監察機構。本會個人會員人數超</strong></span></p>
+    <p><span style="font-size:16px;"><strong>過三百人以上時得按分區比例選出會員代表，再召開會員代表大會，行使會員大會職權。本會會員代表，依本會個人會員人數比例選出，任期二年，</strong></span></p>
+    <p><span style="font-size:16px;"><strong>連選得連任。會員代表選舉辦法另訂之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十五條、會員(會員代表)大會之職權如下：</strong></span></p>
+    <p><span style="font-size:16px;"><strong>   一、訂定與變更章程。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>二、選舉或罷免理事監事。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>三、議決入會費、常年會費、事業費及會員捐款之數額及方式。</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 四、議決年度工作計劃報告及預算決算。</span></p>
+    <p><span style="font-size:16px;"><strong>五、議決會員(會員代表)之除名處分。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>六、議決財產之處分。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>七、議決團體之解散。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>八、與會員之權利義務有關之其他重大事項之議決。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十六條、本會置理事二十一人、監事七人，由會員(會員代表)選舉之，分別成立理事會與監事會。選舉前項理事監事時，同時選出候補理事七人，</strong></span></p>
+    <p><span style="font-size:16px;"><strong>候補監事二人。理事、監事得採用通訊選舉，但不得連續辦理。通訊選舉辦法由理事會通過，報請主管機關核備後行之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十七條、理事會之職權如下</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 一、議決會員(會員代表)大會之召開事項。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>二、審定會員(會員代表)之資格。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>三、選舉或罷免常務理事理事長。</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 四、議決理事、常務理事或理事長之辭職。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>五、聘免工作人員。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>六、擬定年度工作計劃報告及預算決算。</span></p>
+    <p><span style="font-size:16px;"><strong> 七、其他應執行事項。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十八條、理事會置常務理事七人，由理事互選之，並由理事就常務理事中選舉一人為理事長。理事長對內綜理督導會務，對外代表本會，並擔任會</strong></span></p>
+    <p><span style="font-size:16px;"><strong>員(會員代表)大會，理事會主席。理事長應視會務需要到會辦公，其因事不能執行職務時應指定常務理事一人代理之，不能指定時由常務理事互推一</strong></span></p>
+    <p><span style="font-size:16px;"><strong>人代理之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第十九條、監事會之職權如下</strong></span></p>
+    <p><span style="font-size:16px;"><strong>     一、監察理事會工作之執行。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>二、審核年度決算。</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 三、選舉或罷免常務監事。</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 四、議決監事或常務監事之辭職。</span></p>
+    <p><span style="font-size:16px;"><strong>五、其他應監察事項。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十條、監事會置常務監事乙人，由監事互選之，監查日常會務並擔任監事會主席。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十一條、理事、監事之任期二年，連選得連任，理事長之連任以一次為限。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>理事、監事之任期自召開本屆第一次理事會之日起計算。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十二條、理事監事有下列情事之一者應即解任：</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 一、喪失會員(代表會員)資格者。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>二、因故辭職經理事會或監事會議決通過者。</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 三、被罷免或撤免者。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>四、受停權處分其間逾任期二分之一者。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十三條、本會置秘書長一人，處理本會事務，其他工作人員若干人，均由理事長提名經理事會通過後聘免之，並報主管機關備查。但秘書長之解</strong></span></p>
+    <p><span style="font-size:16px;"><strong>聘應先報主管機關核備。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十四條、本會理監事不得兼任工作人員。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十五條、本會得設各種委員會或小組，其組織簡則由理事會擬定，報經主管機關核備後實行，變更時亦同。</span></p>
+    <p><span style="font-size:16px;"><strong> 第二十六條、本會得設榮譽理事長若干名，由理事會提名，經會員(會員代表)大會通過聘請之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十七條、本會得設榮譽理事及顧問若干人，其聘期與理事、監事之任期同。榮譽理事為曾任三屆以上之理監事，由理事長徵求同意提名之，經理</strong></span></p>
+    <p><span style="font-size:16px;"><strong>事會通過聘任 (榮譽理事不得超過理事名額，顧問不得超過理事名額之三分之一) 。</strong></span></p>
+</div>
+<br>
+<button class="collapsible" style="color:rgb(255, 0, 195);"><strong>第四章 會議</strong></button>
+<div class="content">
+    <p><span style="font-size:16px;"><strong>第二十八條、會員(會員代表)大會分定期會議與臨時會議兩種，由理事長召集，召集時除緊急事故之臨時會議外應於十五日前以書面通知之。定期會</strong></span></p>
+    <p><span style="font-size:16px;"><strong>議每年召開一次，臨時會議於理事會認為必要，或經會員（會員代表）十分之一以上之請求，或監事會函請召集時召開之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第二十九條、會員(會員代表)不能親自出席會員(會員代表)大會時，得以書面委託其他會員(會員代表)代理，每一會員(會員代表)以代理一人為限。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十條、會員(會員代表)大會之決議，以會員(會員代表)過半數之出席，出席人數過半數或較多數之同意行之，但章程之訂定與變更以出席人數四分</strong></span></p>
+    <p><span style="font-size:16px;"><strong>之三以上之同意或全體會員三分之二以上書面之同意行之。本會之解散，得隨時以全體會員三分之二以上之可決解散之。下列事項之決議以出席人數</strong></span></p>
+    <p><span style="font-size:16px;"><strong>三分之二以上同意行之：</strong></span></p>
+    <p><span style="font-size:16px;"><strong>一、會員(會員代表)之除名;</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 二、理事監事之罷免;</span></p>
+    <p><span style="font-size:16px;"><strong>三、財產之處分;</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 四、其他與會員權利義務有關之重大事項。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十一條、理事會每三個月召開一次，監事會每六個月召開一次，必要時得召開聯席會議或臨時會議。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>前項會議召集時，除臨時會議外，應於七日前以書面通知。會議之決議各以理事監事過半數之出席，出席人數過半數或較多數之同意行之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十二條、理事監事應出席理事監事會議，理事會監事會不得委託出席。理事監事連續兩次無故缺席理事會監事會者，視同辭職。</strong></span></p>
+</div>
+<br>
+<button class="collapsible" style="color:rgb(255, 0, 195);"><strong>第五章 經費及會計</strong></button>
+<div class="content">
+    <p><span style="font-size:16px;"><strong>第三十三條、會經費來源如下</strong></span></p>
+    <p><span style="font-size:16px;"><strong>一、入會費：各類會員(除名譽會員外)入會時應一次繳納，入會費(以新台幣計)如下：學生會員壹百元其他會員伍百元。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>二、常年會費：會員(除榮譽會員外)需繳交年費，每年新台幣年費如下：學生貳百元、個人會員捌百元、團體會員伍仟元。個人會員一次繳交捌仟元</strong></span></p>
+    <p><span style="font-size:16px;"><strong>者，團體會員一次繳交伍萬元者，得永久免繳常年會費。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>  三、事業費。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>四、會員捐款。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>五、委託收益。</strong></span></p>
+    <p><span style="font-size:16px;"><strong> 六、基金及其孳息。</span></p>
+    <p><span style="font-size:16px;"><strong>七、其他收入。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十四條、本會會計年度自每年一月一日起至十二月三十一日止。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十五條、本會每年編造預(決)算報告於每年終了之前(後)兩個月內經理事會審查，提會員(會員代表)大會通過，並報主管機關核備。會員(會員代</strong></span></p>
+    <p><span style="font-size:16px;"><strong>表)大會因故未能及時召開時，應經理監事通過先報主管機關，事後提報大會追認。但決算報告應先送監事會審核，並將審核結果一併提報會員 (會員</strong></span></p>
+    <p><span style="font-size:16px;"><strong>代表)大會。 </strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十六條、本會於解散後，剩餘財產歸屬所在地之地方自治團體或主管機關指定之機關團體所有。</strong></span></p>
+    
+</div>
+<br>
+<button class="collapsible" style="color:rgb(255, 0, 195);"><strong>第六章 附則</strong></button>
+<div class="content">
+    <p><span style="font-size:16px;"><strong>第三十七條、本章程未規定事項悉依有關法令規定辦理。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十八條、本會辦事細則及各種委員會組織章程由理事會訂定之。</strong></span></p>
+    <p><span style="font-size:16px;"><strong>第三十九條、本章程經會員(會員代表)大會通過報經主管機關核備後實行變更時亦同。</strong></span></p>
+</div>
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+ 
+  
+  
+
+            <!-- Start Contact Form -->
+         
+            <!-- End Contact Form -->
+
+
+       
+    <!-- End Contact -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">首頁</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact1.html">關於協會
+                        </a> <!-- 链接到您的首页 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact3.html">學會組織</a> <!-- 链接到关于页面 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact4.html">理監事</a> <!-- 链接到服务页面 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact5.html">申請入會</a> <!-- 链接到联系页面 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact6.html">會議記錄</a> <!-- 链接到您的首页 -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact7.html">資料下載</a> <!-- 链接到您的首页 -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Footer -->
+    <footer class="bg-secondary pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <i class='bx bx-buildings bx-sm text-light'></i>
+                        <span class="text-light h5">中華資管</span> <span class="text-light h5 semi-bold-600">學會</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Welcome to ROC Department of Information Management Students Association
+                    </p>
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">資訊管理學會</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" href="index.html">[選舉公告]:中華民國資訊管理學會第十八屆...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="activity.html">【會員代表大會公告】中華民國資訊管理學會...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="work.html">【理監事選舉公告】社團法人中華民國資訊管...</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" href="a.html">...更多</a>
+                            </li>
+                           
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">學校</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【徵才】國立臺東大學資訊管理學系徵聘專任...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才】國立成功大學工業與資訊管理學系誠...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">【徵聘公告】國立東華大學資訊管理學系徵聘...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">業界</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.fju.edu.tw/">【論文徵稿】第十一屆服務科學研究論壇暨2...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.im.fju.edu.tw/">【徵才公告】衛生福利部食品藥物管理署徵審...</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="http://www.academic.fju.edu.tw/#&panel1-1">Drupal跨界整合之社群大會即將開跑</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="https://www.facebook.com/FJUSA/">...更多</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © FJCU IM 
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by <a rel="sponsored" class="text-decoration-none text-light" target="_blank"><strong>輔仁大學資管系學會</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Load jQuery require for isotope -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.js"></script>
+    <!-- Page Script -->
+    <script>
+        $(window).load(function() {
+            // init Isotope
+            var $projects = $('.projects').isotope({
+                itemSelector: '.project',
+                layoutMode: 'fitRows'
+            });
+            $(".filter-btn").click(function() {
+                var data_filter = $(this).attr("data-filter");
+                $projects.isotope({
+                    filter: data_filter
+                });
+                $(".filter-btn").removeClass("active");
+                $(".filter-btn").removeClass("shadow");
+                $(this).addClass("active");
+                $(this).addClass("shadow");
+                return false;
+            });
+        });
+    </script>
+    <!-- Templatemo -->
+    <script src="assets/js/templatemo.js"></script>
+    <!-- Custom -->
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

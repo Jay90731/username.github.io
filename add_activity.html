@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/add_activity.css">
+
+    <title>註冊</title>
+  </head>
+  <body>
+  
+
+  
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 pt-4">
+            <img src="assets\img\4.png" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <form action="php_api/add_activity.php" method="post">
+                <div class="mb-4">
+                <h3>新增設備</h3>
+                </div>
+                  <div class="form-group first">
+                    <label for="username">設備名稱</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                  </div>
+                  <div class="form-group mt-2">
+                    <label for="username">描述</label>
+                    <input type="textarea" class="form-control" id="description" name="description">
+                  </div>
+                  <div class="form-group mt-2 last mb-4">
+                    <label for="username">備註</label>
+                    <input type="text" class="form-control" id="note" name="note">
+                  </div>
+                  <!-- <div class="form-group last mb-4 mt-2">
+                    <input type="file"  class="form-control" id="image" name="image">
+                  </div> -->
+                  
+                  <input type="submit" value="新增" class="btn btn-block btn-primary" name="submit">
+
+                </div>
+              </form>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+    <script src="assets/js/js_add/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/js_add/popper.min.js"></script>
+    <script src="assets/js/js_add/bootstrap.min.js"></script>
+    <script src="assets/js/js_add/main.js"></script>
+  </body>
+</html>
